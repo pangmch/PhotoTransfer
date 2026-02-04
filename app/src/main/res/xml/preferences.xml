@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/transfer_history">
+        
+        <Preference
+            android:key="view_history"
+            android:title="@string/view_history"
+            android:summary="View transfer history and retry failed transfers" />
+        
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about">
+        
+        <Preference
+            android:key="version"
+            android:title="@string/version"
+            android:summary="1.0"
+            android:selectable="false" />
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>

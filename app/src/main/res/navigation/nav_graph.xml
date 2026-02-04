@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_camera">
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.phototransfer.ui.camera.CameraFragment"
+        android:label="@string/nav_camera" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.phototransfer.ui.gallery.GalleryFragment"
+        android:label="@string/nav_gallery">
+        <action
+            android:id="@+id/action_gallery_to_transfer"
+            app:destination="@id/nav_transfer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_transfer"
+        android:name="com.example.phototransfer.ui.transfer.TransferFragment"
+        android:label="@string/nav_transfer" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.phototransfer.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings" />
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.phototransfer.ui.history.HistoryFragment"
+        android:label="@string/transfer_history" />
+
+</navigation>
